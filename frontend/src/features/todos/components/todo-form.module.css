@@ -1,0 +1,77 @@
+.form {
+  margin-bottom: var(--spacing-lg);
+}
+
+.inputWrapper {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  padding: var(--spacing-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: var(--font-size-base);
+  transition: border-color var(--transition-fast);
+}
+
+.input:focus {
+  border-color: var(--color-focus);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.input[aria-invalid="true"] {
+  border-color: var(--color-primary);
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 8px;
+  transition: background-color var(--transition-fast);
+}
+
+.addButton:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+}
+
+.addButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.addButton:focus {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.error {
+  margin-top: var(--spacing-xs);
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+  .addButton {
+    width: 40px;
+    height: 40px;
+  }
+}
