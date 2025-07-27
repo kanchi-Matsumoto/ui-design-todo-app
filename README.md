@@ -1,3 +1,5 @@
+<img width="757" height="411" alt="CleanShot 2025-07-27 at 16 40 15@2x" src="https://github.com/user-attachments/assets/5d7a0782-b0a9-4a52-b246-28962893cb20" />
+
 # Todo App - モダンなタスク管理アプリケーション
 
 Todoist 風の UI を持つ、フルスタックのタスク管理アプリケーションです。React と Node.js を使用して構築されており、MySQL データベースでデータを永続化します。
